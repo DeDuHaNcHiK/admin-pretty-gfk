@@ -1,0 +1,3 @@
+{% include 'django/forms/widgets/input.html' %}<a {% if related_url and related_url != '#' %}href="{{ related_url }}"{% endif %} class="related-lookup" id="lookup_id_{{ widget.name }}" title="{{ link_title }}"></a>{% if link_label %}
+<strong>{% if link_url %}<a href="{{ link_url }}">{{ link_label }}</a>{% else %}{{ link_label }}{% endif %}</strong>{% endif %}
+
