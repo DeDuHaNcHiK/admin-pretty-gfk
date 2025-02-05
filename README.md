@@ -73,13 +73,13 @@ admin.site.register(Advert, AdvertAdmin)
 
 ## Screenshots
 Default create form
-![default create form](images/before_create.png)
+![default create form](https://github.com/DeDuHaNcHiK/admin-pretty-gfk/blob/main/images/before_create.png)
 Create form with admin_pretty_gfk
-![create form with admin_pretty_gfk](images/after_create.png)
+![create form with admin_pretty_gfk](https://github.com/DeDuHaNcHiK/admin-pretty-gfk/blob/main/images/after_create.png)
 Default edit object form
-![default edit object form](images/before_change.png)
+![default edit object form](https://github.com/DeDuHaNcHiK/admin-pretty-gfk/blob/main/images/before_change.png)
 Edit object form with admin_pretty_gfk
-![Edit object form](images/after_change.png)
+![Edit object form](https://github.com/DeDuHaNcHiK/admin-pretty-gfk/blob/main/images/after_change.png)
 
 ## License
 This project is licensed under the MIT License.
