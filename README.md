@@ -14,6 +14,15 @@ pip install admin_pretty_gfk
 
 ## Usage
 ### Import and Use in ModelAdmin
+#### Using the Mixin
+```python
+from admin_pretty_gfk.mixins import PrettyGFKModelAdminMixin
+from django.contrib import admin
+
+class AdvertAdmin(PrettyGFKModelAdminMixin, admin.ModelAdmin):
+    pass
+```
+
 #### Using the Widget
 ```python
 from admin_pretty_gfk.widgets import ContentTypeSelect, ForeignKeyContentIdWidget
@@ -49,15 +58,6 @@ class AdvertAdmin(admin.ModelAdmin):
     form = AdvertModelForm
 ```
 
-#### Using the Mixin
-```python
-from admin_pretty_gfk.mixins import PrettyGFKModelAdminMixin
-from django.contrib import admin
-
-class AdvertAdmin(PrettyGFKModelAdminMixin, admin.ModelAdmin):
-    pass
-```
-
 #### Registering Models
 ```python
 admin.site.register(Buy)
@@ -70,6 +70,16 @@ admin.site.register(Advert, AdvertAdmin)
 1. `PrettyGFKModelAdminMixin` automates form handling for models with GFKs.
 2. `ContentTypeSelect` updates object selection dynamically when the content type changes.
 3. `ForeignKeyContentIdWidget` ensures proper URL handling for related objects.
+
+## Screenshots
+Default create form
+![default create form](images/before_create.png)
+Create form with admin_pretty_gfk
+![create form with admin_pretty_gfk](images/after_create.png)
+Default edit object form
+![default edit object form](images/before_change.png)
+Edit object form with admin_pretty_gfk
+![Edit object form](images/after_change.png)
 
 ## License
 This project is licensed under the MIT License.
